@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ex 2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Garrafa para água</h1>
+  </header>
+  <main>
+    <section>
+      <table border="1">
+         <tr>
+            <th colspan="4">Dados do produto</th>
+         </tr>
+        <tr>
+          <td>preço</td>
+          <td>estoque</td>
+          <td>cores</td>
+          <td>tamanhos</td>
+        </tr>
+        <tr>
+          <td>R$30,00</td>
+          <td>200un</td>
+          <td>Preto/Rosa</td>
+          <td>1000mls</td>
+        </tr>
+        <tr>
+          <td>R$20,00</td>
+          <td>350un</td>
+          <td>Preto/Rosa</td>
+          <td>500mls</td>
+        </tr>
+      </table>
+      
+    </section>
+    <section>
+      <fieldset>
+        <legend>Informações do Cliente</legend>
+        <form>
+          <label for="inome">Nome</label>
+          <input type="text" name="nome" id="inome">
+          <br />
+          <label for="iemail">Email</label>
+          <input type="email" name="email" id="iemail">
+          <br />
+          <label for="iendereco">Endereço</label>
+          <input type="text" name="endereco" id="iendereco">
+          <br />
+        </form>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <legend>Informações da compra</legend>
+        <form>
+          <label for="iquantidade">Quantidade</label>
+          <input type="number" name="quantidade" id="iquantidade">
+          <br />
+          <label for="icor">Cor</label> 
+          <select name="cor" id="icor">
+            <option>Preto</option>
+            <option>Rosa</option> 
+          </select>
+          <br />
+          <label for="itamanho">Tamanho</label>
+          <select name="tamanho" id="itamanho">
+            <option>1000mls</option>
+            <option>500mls</option>
+          </select>
+          <br />
+          <label for="imetodo">Método de pagamento</label>
+          <br>
+          <input type="radio" id="cartao" name="metodo" value="cartao">
+          <label for="cartao">Cartão de crédito</label><br>
+          <input type="radio" id="boleto" name="metodo" value="boleto">
+          <label for="boleto">Boleto</label><br>
+          <br>
+          <input type="submit" value="Adicionar ao Carrinho">
+        </form>
+      </fieldset>
+      
+    </section>
+  </main>
+</body>
+
+</html>

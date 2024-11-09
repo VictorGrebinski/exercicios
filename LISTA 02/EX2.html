@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p><label for="inome">Nome Completo:</label> <input type="text" name="nome" id="inome"></p><br>
+
+            <p><label for="ie-mail">E-mail:</label> <input type="text" name="E-mail" id="ie-mail" autocomplete="ie-mail"></p><br>
+
+            <p><label for="isenha">Senha:</label> <input type="password" name="senha" id="isenha"></p><br>
+
+            <p><label for="icsenha">Confirmação de senha:</label> <input type="password" name="csenha" id="icsenha"></p><br>
+
+            <p><label for="idda">Data de nascimento:</label> <input type="text" name="dda" id="idda" placeholder="dd/mm/aaaa"></p><br>
+
+            <fieldset><!--Genero-->
+                <legend>Gênero</legend>
+                <input type="radio" name="sx" id="imasc"> <label for="imasc">Masculino</label>
+
+                <input type="radio" name="sx" id="ifeme"> <label for="ifeme">Feminino</label>
+
+                <input type="radio" name="sx" id="ioto"> <label for="ioto">Outro</label>
+<!--estao com o mesmo nome para poder ser  trocado quando outra bolinha for selecionada-->
+            </fieldset>
+
+            <p><input type="submit" value="Cadastrar" style="width: 150px; height: 25px;" ></p>
+
+        </form>
+    </main>
+    
+</body>
+</html>

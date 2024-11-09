@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1 L3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Inscrição do Evento</h1></header>
+    <main>
+        <form action="#">
+            <p><label for="inome">Nome completo</label> <input type="text" name="nome" id="inome" required></p>
+
+            <p><label for="iemail">E-mail</label> <input type="email" name="email" id="iemail" ></p>
+
+            <p><label for="itel">Telefone</label> <input type="tel" name="tel" id="itel" required></p>
+
+            <p><label for="inascimento">Data de nascimento</label> <input type="date" name="nascimento" id="inascimento" required></p>
+
+            <p><label for="iinterese">Área de interesse</label>
+            <select name="interesse" id="iinterese" required>Interesse
+            <option value="1">Selecionar</option>
+            <option value="2">JS</option>
+            <option value="3">HTML</option>
+            <option value="4">CSS</option>
+            </select></p>
+
+            <p><label for="inecessidades">Necessidades especiais</label></p>
+            <textarea name="necessidades" id="inecessidades" rows="05" cols="100"></textarea>
+        </form>
+
+        <table border="2">
+        <tr>
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Atividade</th>
+                    <th>Palestrante</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:30 á 12:000</td>
+                    <td>JS</td>
+                    <td>Jubscreuso</td>
+                </tr>
+                <tr>
+                    <td>12:00 á 18:00</td>
+                    <td>HTML</td>
+                    <td>João</td>
+                </tr>
+                <tr>
+                    <td>07:30 á 12:000</td>
+                    <td>JS</td>
+                    <td>Claudinei</td>
+                </tr>
+                <tr>
+                    <td>12:00 á 18:00</td>
+                    <td>HTML</td>
+                    <td>Rodolfo</td>
+                </tr>
+                <tr>
+                    <td>20:00 á 21:00</td>
+                    <td>CSS</td>
+                    <td>Edivardo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Ao escolher lembre que as palestras irão ocorrer simuntaneamente!!</td>
+                </tr>
+            </tfoot>
+        </tr>            
+        </table>
+        <button type="submit">Enviar</button>
+    </main>
+    <footer>
+        <a href="#">Saiba mais</a> <br>
+        <a href="#">Duvidas frequentes</a>
+    </footer>
+</body>
+</html>

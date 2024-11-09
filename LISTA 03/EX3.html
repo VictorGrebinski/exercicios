@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Notas do Aluno e Formulário de Contato</title> </head>
+<body>
+  <header>
+    <h1>Victor</h1> 
+    <h2>ADS</h2>
+  </header>
+  <section>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Disciplina</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Média</th>
+          <th>Situação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WEB</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>aprovado</td>
+        </tr>
+        <tr>
+          <td>java</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7.5</td>
+          <td>aprovado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Média Geral: 6.8</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Formulário de Contato</h2>
+    <form>
+      <fieldset>
+        <legend>Informações do Contato</legend>
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto">
+          <option value="duvida">Dúvida</option>
+          <option value="revisao">Revisão de Nota</option>
+          <option value="outros">Outros</option>
+        </select>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Anexos e Opções</legend>
+        <label for="anexo">Anexo:</label>
+        <input type="file" id="anexo" name="anexo">
+        <input type="checkbox" id="copia" name="copia">
+        <label for="copia">Enviar cópia para meu e-mail</label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>

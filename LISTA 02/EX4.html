@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX4 L02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      
+    </style>
+
+</head>
+<header><h1>Formulario de pedido</h1></header>
+<main>
+    <form action="formulario.php" autocomplete="on">
+
+    <SECTION id="info-cliente">
+        <fieldset>
+            <legend>Informações do cliente</legend>
+            <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+            <br>
+            <p><label for="iendereço">Endereço de entrega</label></p>
+            <textarea name="endereço" id="iendereço" rows="3" cols="60"></textarea>
+            <br>
+        </fieldset>
+    </SECTION>
+
+    <SECTION id="pedido">
+        <fieldset>
+            <legend>Detalhes do pedido</legend>
+            <p><label for="iproduto">Produto</label></p>
+            <select name="produto" id="iproduto" style="height: 25px; width: 100px;">
+                <option value="1">Maça</option>
+                <option value="2">Abacate</option>
+                <option value="3">Manga</option>
+                <option value="0" selected></option>
+            </select>
+            <br>
+        
+            <p><label for="iquantidade">Quantidade</label> <input type="number" name="quantidade" id="iquantidade"></p>
+            <br>
+        </fieldset>
+    </SECTION>
+
+    <SECTION id="pagamento">
+        <fieldset>
+            <legend>Pagamento</legend>
+            <p><label for="credito">Credito</label></p>
+            <input type="radio" name="pagamento" id="credito"><br>
+            <p><label for="debito">Debito</label></p>
+            <input type="radio" name="pagamento" id="debito">
+            <p><label for="transferencia">Transferencia</label></p>
+            <input type="radio" name="pagamento" id="transferencia">
+            <p><label for="boleto">Boleto</label></p>
+            <input type="radio" name="pagamento" id="boleto">
+        </fieldset>
+    </SECTION>
+
+    <SECTION id="termos-de-uso">
+        <fieldset>
+            <legend>Termos de uso</legend>
+            <h2>Termos e Condições</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam odit nam autem nisi ducimus voluptatem minima dolor non, porro ut maiores dolores vel modi! Dolore nisi alias libero cumque consequuntur!</p>
+            <p><label for="iaceito">aceito</label></p>
+            <input type="checkbox" name="aceito" id="iaceito">
+        </fieldset>
+    </SECTION>
+<!--
+<p><label for="irecusar">Recusar</label></p>
+    <input type="checkbox" name="recuso" id="irecusar">
+nao faz sentido ter uma checkbox para recusar por poder marcar aceitar e recusar caso fosse feito com radio teria sentido.
+    -->
+    <SECTION id="reset-submit">
+        <button type="reset">Limpar Formulario</button>
+        <br>
+        <button type="submit">Enviar</button>
+    </SECTION>
+    
+    </form>
+</main>
+
+<body>
+    
+</body>
+</html>
