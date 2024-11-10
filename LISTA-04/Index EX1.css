@@ -1,0 +1,16 @@
+.cabecario{
+   background-color: teal;
+    color:black;
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.principal{
+    background-color:lightblue;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    padding: 10px; 
+    margin: 20px; 
+}

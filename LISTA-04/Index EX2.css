@@ -1,0 +1,10 @@
+.cabecario{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    background-color:antiquewhite;
+}
+.lista{
+   list-style-type: circle; 
+}
